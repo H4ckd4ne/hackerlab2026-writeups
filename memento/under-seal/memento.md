@@ -55,7 +55,7 @@ Script de test des combinaisons (chiffre × digest × pbkdf2) : `work/trykey.sh`
 - Fichiers images : pas de stéganographie évidente ni de données après EOF.
 - Mes premiers essais OpenSSL étaient invalides : la variable du mot de passe était interprétée par Git Bash avant d'atteindre WSL (mot de passe vide). Corrigé en passant par un script fichier.
 
-## Challenge 2 — Destination réelle et heure locale d'arrivée
+## Challenge 2 — Shooting window — Destination réelle et heure locale d'arrivée
 
 > Pour l'attendre à l'arrivée, il te faut deux choses : où il pose le pied, et quand. Donne la destination réelle et l'heure locale. Format : `HLB2026{Ville-HH:MM}`
 
@@ -69,7 +69,7 @@ Raisonnement :
 
 Note sur le format : `KDR` est le code aéroport de **Kaltyr-Durn** ; le format `Ville-HH:MM` accepte donc `Kaltyr-Durn-17:25`, le tiret interne faisant partie du nom de la ville.
 
-## Challenge 3 — Le refuge
+## Challenge 3 — Le Hideout
 
 > Il lui faut un toit, loin des regards indiscrets. Où comptait-il trouver refuge une fois arrivé ? Format : `HLB2026{Reponse}`
 
