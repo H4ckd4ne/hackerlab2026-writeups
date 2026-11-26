@@ -73,9 +73,9 @@ Note sur le format : `KDR` est le code aéroport de **Kaltyr-Durn** ; le format 
 
 > Il lui faut un toit, loin des regards indiscrets. Où comptait-il trouver refuge une fois arrivé ? Format : `HLB2026{Reponse}`
 
-**Réponse retenue : `HLB2026{Résidence du Phare}`** (q:3 — 50 pts sur la plateforme ; validé par l'équipe).
+**Réponse retenue : `HLB2026{Residence du Phare}`** (q:3 — 50 pts sur la plateforme ; validé par l'équipe).
 
-**Forme exacte** : `Résidence du Phare` (accent sur le « é »). Variantes connues si la plateforme refuse : `Residence du Phare` (sans accent) puis `Résidence du Phare, unité 7`.
+**Forme validée** : `Residence du Phare`, **sans accent** (la plateforme accepte cette forme). Variantes : avec accent (`Résidence du Phare`) puis avec l'unité (`Residence du Phare, unité 7`).
 
 Raisonnement : la destination réelle est Kaltyr-Durn (challenge 2). La seule pièce qui décrit un hébergement à cet endroit est **P-9**, la carte de visite « Résidence du Phare, locations meublées, courte durée, Kaltyr-Durn, unité 7 », que le dossier décrit comme « un pied-à-terre que personne n'était censé connaître ». L'hôtel de Vexholm (P-5, réservé au nom de M. Laurent pour la nuit du 16 au 17) est le leurre : il n'a jamais été sa destination.
 
