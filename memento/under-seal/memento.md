@@ -2,7 +2,9 @@
 
 **Catégorie :** misc (forensic / OSINT)
 **Mission :** The Fall of Memento — dossier BV-2026-0518, « L'affaire Mertens »
-**Flag** : `HLB2026{cc12c83247a308c80746d4c79ce76d16}`
+**Flag** : *propre à l'instance — non publié*
+
+**Découpage** : q:1 50 pts · q:2 100 pts · q:3 50 pts (200 au total).
 
 ## Énoncé
 > On a forcé la planque d'Henri Mertens quelques heures après son départ. Trop tard pour lui, trop tôt pour ses traces : il n'a pas eu le temps de tout faire disparaître. Ce qu'il a tenté de détruire est sous scellés. Ce qui a survécu suffit peut-être à le retrouver. Reprenez le dossier.
@@ -44,7 +46,7 @@ La clé est un mot de passe OpenSSL. Combinaison qui donne un padding valide :
 ```bash
 openssl enc -d -aes-256-cbc -md sha256 -pbkdf2 \
   -pass pass:b6f383eb6a9a4dbcea04308f -in scelle-P7.enc
-# HLB2026{cc12c83247a308c80746d4c79ce76d16}
+# HLB2026{…}
 ```
 
 Script de test des combinaisons (chiffre × digest × pbkdf2) : `work/trykey.sh`.
@@ -57,7 +59,7 @@ Script de test des combinaisons (chiffre × digest × pbkdf2) : `work/trykey.sh`
 
 > Pour l'attendre à l'arrivée, il te faut deux choses : où il pose le pied, et quand. Donne la destination réelle et l'heure locale. Format : `HLB2026{Ville-HH:MM}`
 
-**Flag proposé : `HLB2026{Durn-17:25}`** (non vérifiable localement : l'application est statique, sans API de validation ; non soumis).
+**Réponse retenue : `HLB2026{Kaltyr-Durn-17:25}`** (q:2 — 100 pts sur la plateforme ; validé par l'équipe).
 
 Raisonnement :
 1. La carte d'embarquement affiche VLD→KTY→KVX (Vexholm) : c'est la destination **apparente**, confirmée par la carte annotée (P-8) et l'hôtel de Vexholm (P-5, leurre).
@@ -65,13 +67,13 @@ Raisonnement :
 3. Le « jour 137 » est le 17/05/2026 (jour julien) : même date que le reçu de change (06:40) et le cliché du téléphone.
 4. Grille KalAir (heures locales, `data.js` et tableau de la photo) : KA088 KVX→KDR **jour 137 : départ 15:40, arrivée 17:25**. Les autres jours sont des leurres (jour 136 : 17:05, jour 138 : 16:10 → 17:55). KA120 KVX→KTY est la « ligne », écartée par la note.
 
-Réserve sur le format : « Ville » est pris comme **Durn** (le nom de la localité, `KDR = Kaltyr-Durn` étant l'aéroport) ; `Kaltyr-Durn` contiendrait un second tiret et collerait mal au format `Ville-HH:MM`.
+Note sur le format : `KDR` est le code aéroport de **Kaltyr-Durn** ; le format `Ville-HH:MM` accepte donc `Kaltyr-Durn-17:25`, le tiret interne faisant partie du nom de la ville.
 
 ## Challenge 3 — Le refuge
 
 > Il lui faut un toit, loin des regards indiscrets. Où comptait-il trouver refuge une fois arrivé ? Format : `HLB2026{Reponse}`
 
-**Flag proposé : `HLB2026{Residence du Phare}`** (formulation exacte non vérifiable localement ; non soumis).
+**Réponse retenue : `HLB2026{Résidence du Phare}`** (q:3 — 50 pts sur la plateforme ; validé par l'équipe).
 
 Raisonnement : la destination réelle est Kaltyr-Durn (challenge 2). La seule pièce qui décrit un hébergement à cet endroit est **P-9**, la carte de visite « Résidence du Phare, locations meublées, courte durée, Kaltyr-Durn, unité 7 », que le dossier décrit comme « un pied-à-terre que personne n'était censé connaître ». L'hôtel de Vexholm (P-5, réservé au nom de M. Laurent pour la nuit du 16 au 17) est le leurre : il n'a jamais été sa destination.
 
