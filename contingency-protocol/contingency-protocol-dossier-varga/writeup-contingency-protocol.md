@@ -1,6 +1,6 @@
 # Contingency Protocol — Dossier Varga (dead man's switch)
 
-**Flag** : `HLB2026{efe2f7684bf731e5322e91068f4c28aa}`
+**Flag** : *propre à l'instance — non publié*
 
 ## Objectif
 
@@ -39,7 +39,7 @@ claimOwnership : 0x71de8f1e7cd2c2020694a40c87d30388c91089dae982f76730d17c1188ca8
 disarm         : 0x2aafdab6d26dd0db197c08c646327ff295cd1ce36df2b52e30bc37f2523ed0d6
 ```
 
-Le flag est indiqué en tête de ce document.
+Le flag est propre à l'instance et n'est pas publié.
 
 ## Validation
 

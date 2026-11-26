@@ -1,6 +1,6 @@
 # The Fugitive — HackerLab 2026 (MISC, 200 pts)
 
-**Flag** : `HLB2026{23c99ee2b06e3deb01ea46e24b10f880}`
+**Flag** : *propre à l'instance — non publié*
 
 ## Objectif
 
@@ -217,7 +217,7 @@ Q05 200 True 5
 Q06 200 True 6
 ```
 
-La dernière réponse renvoie `all_done: true` et le flag. Le flag est indiqué en tête de ce document.
+La dernière réponse renvoie `all_done: true` et le flag. Le flag est propre à l'instance et n'est pas publié.
 
 ## Chemins qui ont échoué
 
@@ -275,7 +275,7 @@ La dernière réponse renvoie `all_done: true` et le flag. Le flag est indiqué 
 
 ## Remarque
 
-Le flag final figure en tête de ce document. Le tunnel `wg0` peut être supprimé après
+Le flag final est propre à l'instance et n'est pas publié. Le tunnel `wg0` peut être supprimé après
 validation avec :
 
 ```bash
